@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SpeditionLibrary
+﻿namespace SpeditionLibrary
 {
     public class Corriere
     {
-        public string NomeCorriere { get; }
+        private readonly string NomeCorriere;
         public List<Spedizione> corriereList;
 
         public Corriere(string nomeCorriere)
@@ -20,7 +14,9 @@ namespace SpeditionLibrary
         public void PrintSpedizioni()
         {
             double ingombroTot = 0;
+            Console.WriteLine($"Corriere: {NomeCorriere}");
             Console.WriteLine("\n---------- Riepilogo Spedizioni ----------\n");
+
             foreach (var s in corriereList)
             {
                 Console.WriteLine($"Mittente: {s.Mittente}\n" +
@@ -31,6 +27,7 @@ namespace SpeditionLibrary
             }
 
             Console.WriteLine($"Ingombro TOT: {ingombroTot}");
+         
         }
     }
 }

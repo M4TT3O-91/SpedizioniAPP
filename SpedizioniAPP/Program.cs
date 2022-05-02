@@ -1,8 +1,5 @@
-﻿
-using SpeditionLibrary;
+﻿using SpeditionLibrary;
 using SpeditionLibrary.Entities;
-
-Console.WriteLine("Hello, World!");
 
 var plico1 = new Plico("Giovanni","Roberto")
 {
