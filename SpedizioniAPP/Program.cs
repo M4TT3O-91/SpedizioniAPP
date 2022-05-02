@@ -36,13 +36,11 @@ Console.WriteLine(pacco1.Equal(pacco2) ? "I pacchi sono uguali" : "I pacchi sono
 
 var bartolini = new Corriere("Barolini");
 
-bartolini.corriereList.Add(plico1);
-bartolini.corriereList.Add(plico2);
-bartolini.corriereList.Add(pacco1);
-bartolini.corriereList.Add(pacco2);
+bartolini.CorrList.Add(plico1);
+bartolini.CorrList.Add(plico2);
+bartolini.CorrList.Add(pacco1);
+bartolini.CorrList.Add(pacco2);
 
 bartolini.PrintSpedizioni();
-
-
 
 Console.ReadLine();
