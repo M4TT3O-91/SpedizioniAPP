@@ -32,9 +32,9 @@ var pacco2 = new Pacco("Lucia", "Anna")
 };
 
 Console.WriteLine($"Il pacco P1: {pacco1} è ugulae a Pacco P2 {pacco2}");
-Console.WriteLine(pacco1.Equals(pacco2) ? "I pacchi sono uguali" : "I pacchi sono diversi");
+Console.WriteLine(pacco1.Equal(pacco2) ? "I pacchi sono uguali" : "I pacchi sono diversi");
 
-var bartolini = new Corriere( "Bartolini");
+var bartolini = new Corriere("Barolini");
 
 bartolini.corriereList.Add(plico1);
 bartolini.corriereList.Add(plico2);
