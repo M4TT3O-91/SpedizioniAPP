@@ -34,6 +34,7 @@ var pacco2 = new Pacco("Lucia", "Anna")
     Valore = 200
 };
 
+Console.WriteLine($"Il pacco P1: {pacco1} è ugulae a Pacco P2 {pacco2}");
 Console.WriteLine(pacco1.Equals(pacco2) ? "I pacchi sono uguali" : "I pacchi sono diversi");
 
 var bartolini = new Corriere( "Bartolini");

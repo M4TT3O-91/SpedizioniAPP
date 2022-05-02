@@ -18,7 +18,7 @@ namespace SpeditionLibrary
             return getIngombro();
         }
 
-        public bool Equals(Object obj)
+        public override bool Equals(Object obj)
         {
             return obj is Spedizione sped && 
                 Mittente == sped.Mittente &&
@@ -27,6 +27,16 @@ namespace SpeditionLibrary
                 getIngombro() == sped.getIngombro();
         }
 
+        public override string? ToString()
+        {
+            return $"Mitt: {Mittente} -> Dest: {Destinatario} - Valore:{Valore} - {getIngombro()}";
+        }
+
         public abstract double getIngombro();
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Mittente, Destinatario, Valore, getIngombro());
+        }
     }
 }

@@ -17,7 +17,6 @@ namespace SpeditionLibrary.Entities
         {
         }
 
-
         public override double getIngombro()
         {
             return Larghezza * Altezza * Profondita;
